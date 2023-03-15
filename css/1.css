@@ -1,0 +1,93 @@
+h2{
+    background-color: cadetblue;
+    color: yellow;
+    margin-left: 100px;
+    width: 300px;
+    animation: anim1 3s alternate infinite;
+}
+
+@keyframes anim1 {
+    from{
+        margin-left: 100px;
+        width: 300px;
+        transform: rotate(0);
+    }
+    to{
+        margin-left: 500px;
+        width: 600px;
+        transform: rotate(360deg);
+    }
+}
+
+div{
+    margin: auto;
+    background-image: url("../img/car.jpg");
+    width: 360px;
+    height: 360px;
+    border: black solid 5px;
+    animation: car 2s infinite;
+
+}
+
+@keyframes car {
+    0%{
+        background-position-x: 0;
+    }
+
+    33%{
+        background-position-x: 500px;
+    }
+    66%{
+        background-position-x: 400px;
+    }
+    100%{
+        background-position-x: 720px;
+    }
+}
+
+#q{
+    background-image: none;
+    margin-left: auto;
+    margin-right: 0;
+    border-radius: 50px;
+}
+
+section{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50px;
+    position: relative;
+    animation: run 3s infinite linear;
+    left: 0px;
+    top: 0px;
+}
+
+@keyframes run {
+    0%{
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        left: 310px;
+        top: 0px;
+
+    }
+    50%{
+        left: 310px;
+        top: 310px;
+    }
+
+    75%{
+        left: 0px;
+        top: 310px;
+
+    }
+    100%{
+        left: 0px;
+        top: 0px;
+
+    }
+
+
+}

@@ -1,0 +1,38 @@
+#downH{
+    width: max-content;
+    margin: auto;
+}
+
+#down{
+    width: 500px;
+    height: 50px;
+    margin: auto;
+    border: black solid 3px;
+}
+
+#line{
+    width: 0px;
+    height: 50px;
+    background-color: blue;
+    animation: down 5s infinite;
+}
+
+@keyframes down {
+    0%{
+        width: 0px;
+    }
+    25%{
+        width: 100px;
+    }
+    50%{
+        width: 400px;
+    }
+    75%{
+        width: 300px;
+    }
+    100%{
+        width: 500px;
+    }
+
+}
+
